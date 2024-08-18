@@ -1,0 +1,1552 @@
+2024-08-18T09:13:50.345Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:13:53.125Z info: Connected to MongoDB
+2024-08-18T09:13:53.392Z debug: [indexSync] Creating indices...
+2024-08-18T09:13:53.814Z info: Custom config file loaded:
+2024-08-18T09:13:53.817Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:13:53.818Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "gpt-4o-mini",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:13:53.824Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:13:53.824Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:13:53.824Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:13:53.824Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:13:53.825Z info: Please replace any default secret values.
+2024-08-18T09:13:53.825Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:13:54.361Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:13:54.380Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T09:15:48.945Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:16:45.701Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:16:54.112Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: null,
+  endpoint: "openAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4o-mini",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4-turbo"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4-turbo"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:16:54.118Z error: [handleAbortError] AI response error; aborting request: {"type":"no_user_key"}
+2024-08-18T09:16:54.120Z warn: Invalid conversation ID: null
+2024-08-18T09:16:54.120Z info: ---Invalid conversation ID Params:
+
+{
+  "sender": "GPT-4",
+  "messageId": "a2da7569-9181-43cc-b16d-26e079ede941",
+  "conversationId": null,
+  "parentM... [truncated]
+2024-08-18T09:21:36.129Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: "41ec6d72-388f-4b4f-a072-7dc971c42465",
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4-turbo",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4-turbo"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4-turbo"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:21:36.438Z debug: [BaseClient] Loading history:
+{
+  conversationId: "41ec6d72-388f-4b4f-a072-7dc971c42465",
+  parentMessageId: "a2da7569-9181-43cc-b16d-26e079ede941",
+}
+2024-08-18T09:21:36.526Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 127982,
+  maxContextTokens: 127990,
+}
+2024-08-18T09:21:36.527Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 127982,
+  maxContextTokens: 127990,
+}
+2024-08-18T09:21:36.527Z debug: [BaseClient] tokenCountMap:
+{
+  9af23227-1ff4-4c9f-a28b-5aa76d42be22: 5,
+}
+2024-08-18T09:21:36.527Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 127982,
+  payloadSize: 1,
+  maxContextTokens: 127990,
+}
+2024-08-18T09:21:36.527Z debug: [BaseClient] tokenCountMap
+{
+  9af23227-1ff4-4c9f-a28b-5aa76d42be22: 5,
+  instructions: undefined,
+}
+2024-08-18T09:21:36.528Z debug: [BaseClient] userMessage
+{
+  messageId: "9af23227-1ff4-4c9f-a28b-5aa76d42be22",
+  parentMessageId: "a2da7569-9181-43cc-b16d-26e079ede941",
+  conversationId: "41ec6d72-388f-4b4f-a072-7dc971c42465",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:21:36.529Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2024... [truncated]",
+    modelOptions.model: "gpt-4-turbo",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"}],
+}
+2024-08-18T09:21:36.546Z debug: Making request to https://testresourse.openai.azure.com/chat/completions?api-version=2024-07-18
+2024-08-18T09:21:36.598Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:21:37.728Z warn: [OpenAIClient.chatCompletion][stream] API error
+2024-08-18T09:21:37.733Z error: [handleAbortError] AI response error; aborting request: 404 Resource not found
+2024-08-18T09:21:37.751Z debug: [AskController] Request closed
+2024-08-18T09:24:28.582Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:24:30.495Z info: Connected to MongoDB
+2024-08-18T09:24:30.628Z debug: [indexSync] There are 2 messages and 2 indexed
+2024-08-18T09:24:30.628Z debug: [indexSync] There are 1 convos and 1 indexed
+2024-08-18T09:24:30.672Z info: Custom config file loaded:
+2024-08-18T09:24:30.672Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:24:30.673Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:24:30.675Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:24:30.675Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:24:30.675Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:24:30.675Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:24:30.676Z info: Please replace any default secret values.
+2024-08-18T09:24:30.676Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:24:30.909Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:24:30.924Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T09:24:36.841Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:24:37.253Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:24:40.641Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:24:40.897Z debug: [BaseClient] Loading history:
+{
+  conversationId: "874f5958-754f-4fee-ab47-6311b896069e",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T09:24:40.999Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:24:40.999Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:24:40.999Z debug: [BaseClient] tokenCountMap:
+{
+  8035ed03-2f53-48d4-a2ac-d235b9004500: 5,
+}
+2024-08-18T09:24:40.999Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:24:41.000Z debug: [BaseClient] tokenCountMap
+{
+  8035ed03-2f53-48d4-a2ac-d235b9004500: 5,
+  instructions: undefined,
+}
+2024-08-18T09:24:41.000Z debug: [BaseClient] userMessage
+{
+  messageId: "8035ed03-2f53-48d4-a2ac-d235b9004500",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "874f5958-754f-4fee-ab47-6311b896069e",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:24:41.003Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"}],
+}
+2024-08-18T09:24:41.012Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01-preview
+2024-08-18T09:24:41.069Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:24:42.794Z debug: [OpenAIClient] chatCompletion response
+{
+  object: "chat.completion",
+  // 1 prompt_filter_result(s)
+  prompt_filter_results: [{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":... [truncated]],
+  id: "chatcmpl-9xWLpi3rSvCPc7GYHprrUsIsh1f5P",
+  // 1 choice(s)
+  choices: [{"content_filter_results":{},"message":{"role":"assistant","content":"Hello! How can I assist you to... [truncated]],
+  created: 1723972737,
+  model: "gpt-4o-mini",
+  system_fingerprint: "fp_276aa25277",
+}
+2024-08-18T09:24:42.803Z debug: [spendTokens] conversationId: 874f5958-754f-4fee-ab47-6311b896069e | Context: message | Token usage:
+{
+  promptTokens: 8,
+  completionTokens: 9,
+}
+2024-08-18T09:24:42.842Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:24:42.873Z debug: [AskController] Request closed
+2024-08-18T09:24:42.899Z error: There was an uncaught error: Model named "Azure Models" not found in configuration.
+2024-08-18T09:24:45.354Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:24:47.119Z info: Connected to MongoDB
+2024-08-18T09:24:47.222Z debug: [indexSync] There are 4 messages and 4 indexed
+2024-08-18T09:24:47.222Z debug: [indexSync] There are 2 convos and 2 indexed
+2024-08-18T09:24:47.239Z info: Custom config file loaded:
+2024-08-18T09:24:47.240Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:24:47.241Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:24:47.242Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:24:47.243Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:24:47.243Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:24:47.243Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:24:47.244Z info: Please replace any default secret values.
+2024-08-18T09:24:47.244Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:24:47.258Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:24:47.274Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T09:25:22.591Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:25:24.279Z info: Connected to MongoDB
+2024-08-18T09:25:24.393Z debug: [indexSync] There are 4 messages and 4 indexed
+2024-08-18T09:25:24.393Z debug: [indexSync] There are 2 convos and 2 indexed
+2024-08-18T09:25:24.412Z info: Custom config file loaded:
+2024-08-18T09:25:24.412Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:25:24.414Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:25:24.416Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:25:24.416Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:25:24.420Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:25:24.421Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:25:24.422Z info: Please replace any default secret values.
+2024-08-18T09:25:24.422Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:25:24.627Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:25:24.635Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T09:25:28.074Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: "874f5958-754f-4fee-ab47-6311b896069e",
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:25:28.261Z debug: [BaseClient] Loading history:
+{
+  conversationId: "874f5958-754f-4fee-ab47-6311b896069e",
+  parentMessageId: "3b2bc692-a36f-4428-8ec6-86502701e3bd",
+}
+2024-08-18T09:25:28.338Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8161,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:28.338Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8161,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:28.338Z debug: [BaseClient] tokenCountMap:
+{
+  8035ed03-2f53-48d4-a2ac-d235b9004500: 5,
+  3b2bc692-a36f-4428-8ec6-86502701e3bd: 13,
+  f4bdb14c-1b19-407c-962f-8a6416d388cb: 5,
+}
+2024-08-18T09:25:28.339Z debug: [BaseClient]
+{
+  promptTokens: 26,
+  remainingContextTokens: 8161,
+  payloadSize: 3,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:28.339Z debug: [BaseClient] tokenCountMap
+{
+  8035ed03-2f53-48d4-a2ac-d235b9004500: 5,
+  3b2bc692-a36f-4428-8ec6-86502701e3bd: 13,
+  f4bdb14c-1b19-407c-962f-8a6416d388cb: 5,
+  instructions: undefined,
+}
+2024-08-18T09:25:28.339Z debug: [BaseClient] userMessage
+{
+  messageId: "f4bdb14c-1b19-407c-962f-8a6416d388cb",
+  parentMessageId: "3b2bc692-a36f-4428-8ec6-86502701e3bd",
+  conversationId: "874f5958-754f-4fee-ab47-6311b896069e",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:25:28.339Z debug: [BaseClient] Skipping 8035ed03-2f53-48d4-a2ac-d235b9004500: already had a token count.
+2024-08-18T09:25:28.339Z debug: [BaseClient] Skipping 3b2bc692-a36f-4428-8ec6-86502701e3bd: already had a token count.
+2024-08-18T09:25:28.341Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 3 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"},{"role":"assistant","content":"Hello! How can I assist you today?"},{"role":"user","content":"hi"}],
+}
+2024-08-18T09:25:28.353Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01
+2024-08-18T09:25:28.391Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:25:29.416Z warn: [OpenAIClient.chatCompletion][stream] API error
+2024-08-18T09:25:29.418Z error: [handleAbortError] AI response error; aborting request: 404 Resource not found
+2024-08-18T09:25:29.429Z debug: [AskController] Request closed
+2024-08-18T09:25:35.383Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:25:35.564Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:25:37.087Z debug: [AskController]
+{
+  text: "hu",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:25:37.089Z debug: [BaseClient] Loading history:
+{
+  conversationId: "014e54fe-d42c-4383-8f65-19dbdf994ccc",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T09:25:37.113Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:37.114Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:37.115Z debug: [BaseClient] tokenCountMap:
+{
+  a1ac00e9-95ae-4728-b000-f4ada7851f7c: 5,
+}
+2024-08-18T09:25:37.116Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:37.117Z debug: [BaseClient] tokenCountMap
+{
+  a1ac00e9-95ae-4728-b000-f4ada7851f7c: 5,
+  instructions: undefined,
+}
+2024-08-18T09:25:37.118Z debug: [BaseClient] userMessage
+{
+  messageId: "a1ac00e9-95ae-4728-b000-f4ada7851f7c",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "014e54fe-d42c-4383-8f65-19dbdf994ccc",
+  sender: "User",
+  text: "hu",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:25:37.119Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hu"}],
+}
+2024-08-18T09:25:37.128Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01
+2024-08-18T09:25:37.182Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:25:38.257Z warn: [OpenAIClient.chatCompletion][stream] API error
+2024-08-18T09:25:38.260Z error: [handleAbortError] AI response error; aborting request: 404 Resource not found
+2024-08-18T09:25:38.284Z debug: [AskController] Request closed
+2024-08-18T09:25:50.941Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: "014e54fe-d42c-4383-8f65-19dbdf994ccc",
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:25:50.948Z debug: [BaseClient] Loading history:
+{
+  conversationId: "014e54fe-d42c-4383-8f65-19dbdf994ccc",
+  parentMessageId: "8bbb7ddf-b827-4441-a806-782857a7938c",
+}
+2024-08-18T09:25:50.961Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8157,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:50.961Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8157,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:50.962Z debug: [BaseClient] tokenCountMap:
+{
+  a1ac00e9-95ae-4728-b000-f4ada7851f7c: 5,
+  8bbb7ddf-b827-4441-a806-782857a7938c: 17,
+  9c799762-e989-4b80-bdfb-6ae1c62d598b: 5,
+}
+2024-08-18T09:25:50.962Z debug: [BaseClient]
+{
+  promptTokens: 30,
+  remainingContextTokens: 8157,
+  payloadSize: 3,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:25:50.962Z debug: [BaseClient] tokenCountMap
+{
+  a1ac00e9-95ae-4728-b000-f4ada7851f7c: 5,
+  8bbb7ddf-b827-4441-a806-782857a7938c: 17,
+  9c799762-e989-4b80-bdfb-6ae1c62d598b: 5,
+  instructions: undefined,
+}
+2024-08-18T09:25:50.963Z debug: [BaseClient] userMessage
+{
+  messageId: "9c799762-e989-4b80-bdfb-6ae1c62d598b",
+  parentMessageId: "8bbb7ddf-b827-4441-a806-782857a7938c",
+  conversationId: "014e54fe-d42c-4383-8f65-19dbdf994ccc",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:25:50.964Z debug: [BaseClient] Skipping a1ac00e9-95ae-4728-b000-f4ada7851f7c: already had a token count.
+2024-08-18T09:25:50.964Z debug: [BaseClient] Skipping 8bbb7ddf-b827-4441-a806-782857a7938c: already had a token count.
+2024-08-18T09:25:50.965Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 3 message(s)
+    modelOptions.messages: [{"role":"user","content":"hu"},{"role":"assistant","content":"An error occurred while processing your request. Please contact the A... [truncated],{"role":"user","content":"hi"}],
+}
+2024-08-18T09:25:50.972Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01
+2024-08-18T09:25:50.998Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:25:52.168Z warn: [OpenAIClient.chatCompletion][stream] API error
+2024-08-18T09:25:52.171Z error: [handleAbortError] AI response error; aborting request: 404 Resource not found
+2024-08-18T09:25:52.187Z debug: [AskController] Request closed
+2024-08-18T09:26:00.859Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:26:03.161Z info: Connected to MongoDB
+2024-08-18T09:26:03.217Z debug: [indexSync] There are 10 messages and 10 indexed
+2024-08-18T09:26:03.217Z debug: [indexSync] There are 3 convos and 3 indexed
+2024-08-18T09:26:03.251Z info: Custom config file loaded:
+2024-08-18T09:26:03.252Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:26:03.253Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:26:03.254Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:26:03.254Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:26:03.255Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:26:03.255Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:26:03.255Z info: Please replace any default secret values.
+2024-08-18T09:26:03.255Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:26:03.475Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:26:03.486Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T09:26:07.416Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:26:07.704Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T09:26:09.292Z debug: [AskController]
+{
+  text: "ih",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T09:26:09.536Z debug: [BaseClient] Loading history:
+{
+  conversationId: "abcf07ae-b103-4a28-8f47-9d7a634a399c",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T09:26:09.605Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:26:09.606Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:26:09.606Z debug: [BaseClient] tokenCountMap:
+{
+  ab915117-58b1-47f7-8286-5a70d3e8bc63: 5,
+}
+2024-08-18T09:26:09.606Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T09:26:09.606Z debug: [BaseClient] tokenCountMap
+{
+  ab915117-58b1-47f7-8286-5a70d3e8bc63: 5,
+  instructions: undefined,
+}
+2024-08-18T09:26:09.607Z debug: [BaseClient] userMessage
+{
+  messageId: "ab915117-58b1-47f7-8286-5a70d3e8bc63",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "abcf07ae-b103-4a28-8f47-9d7a634a399c",
+  sender: "User",
+  text: "ih",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T09:26:09.608Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"ih"}],
+}
+2024-08-18T09:26:09.614Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01-preview
+2024-08-18T09:26:09.660Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:26:11.293Z debug: [OpenAIClient] chatCompletion response
+{
+  object: "chat.completion",
+  // 1 prompt_filter_result(s)
+  prompt_filter_results: [{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":... [truncated]],
+  id: "chatcmpl-9xWNGDZIHcUWHZyWCtue3vyQJhpsd",
+  // 1 choice(s)
+  choices: [{"content_filter_results":{},"message":{"role":"assistant","content":"Hello! How can I assist you to... [truncated]],
+  created: 1723972826,
+  model: "gpt-4o-mini",
+  system_fingerprint: "fp_276aa25277",
+}
+2024-08-18T09:26:11.301Z debug: [spendTokens] conversationId: abcf07ae-b103-4a28-8f47-9d7a634a399c | Context: message | Token usage:
+{
+  promptTokens: 8,
+  completionTokens: 9,
+}
+2024-08-18T09:26:11.368Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T09:26:11.384Z debug: [AskController] Request closed
+2024-08-18T09:26:11.415Z error: There was an uncaught error: Model named "Azure Models" not found in configuration.
+2024-08-18T09:26:13.522Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T09:26:14.662Z info: Connected to MongoDB
+2024-08-18T09:26:14.763Z debug: [indexSync] There are 12 messages and 12 indexed
+2024-08-18T09:26:14.763Z debug: [indexSync] There are 4 convos and 4 indexed
+2024-08-18T09:26:14.779Z info: Custom config file loaded:
+2024-08-18T09:26:14.779Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T09:26:14.780Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T09:26:14.782Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T09:26:14.782Z warn: Default value for CREDS_IV is being used.
+2024-08-18T09:26:14.782Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T09:26:14.783Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T09:26:14.783Z info: Please replace any default secret values.
+2024-08-18T09:26:14.783Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T09:26:14.797Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T09:26:14.805Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:16:45.237Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:16:47.503Z info: Connected to MongoDB
+2024-08-18T18:16:47.701Z debug: [indexSync] There are 12 messages and 12 indexed
+2024-08-18T18:16:47.701Z debug: [indexSync] There are 4 convos and 4 indexed
+2024-08-18T18:16:47.727Z info: Custom config file loaded:
+2024-08-18T18:16:47.727Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:16:47.728Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:16:47.729Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:16:47.729Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:16:47.730Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:16:47.730Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:16:47.730Z info: Please replace any default secret values.
+2024-08-18T18:16:47.730Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:16:47.969Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:16:47.982Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:17:35.320Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:17:35.703Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:17:42.676Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T18:17:43.003Z debug: [BaseClient] Loading history:
+{
+  conversationId: "93760197-ffa7-4448-90be-a94afbbd03f4",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T18:17:43.142Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:17:43.143Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:17:43.149Z debug: [BaseClient] tokenCountMap:
+{
+  86d4f826-3901-4377-bf3c-0073f9763c85: 5,
+}
+2024-08-18T18:17:43.149Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:17:43.149Z debug: [BaseClient] tokenCountMap
+{
+  86d4f826-3901-4377-bf3c-0073f9763c85: 5,
+  instructions: undefined,
+}
+2024-08-18T18:17:43.149Z debug: [BaseClient] userMessage
+{
+  messageId: "86d4f826-3901-4377-bf3c-0073f9763c85",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "93760197-ffa7-4448-90be-a94afbbd03f4",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T18:17:43.152Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"}],
+}
+2024-08-18T18:17:43.168Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01-preview
+2024-08-18T18:17:43.251Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:17:45.313Z debug: [OpenAIClient] chatCompletion response
+{
+  object: "chat.completion",
+  // 1 prompt_filter_result(s)
+  prompt_filter_results: [{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":... [truncated]],
+  id: "chatcmpl-9xefenKsawJJzhTSXyuCkNlWunaYV",
+  // 1 choice(s)
+  choices: [{"content_filter_results":{},"message":{"role":"assistant","content":"Hello! How can I assist you to... [truncated]],
+  created: 1724004718,
+  model: "gpt-4o-mini",
+  system_fingerprint: "fp_276aa25277",
+}
+2024-08-18T18:17:45.326Z debug: [spendTokens] conversationId: 93760197-ffa7-4448-90be-a94afbbd03f4 | Context: message | Token usage:
+{
+  promptTokens: 8,
+  completionTokens: 9,
+}
+2024-08-18T18:17:45.389Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:17:45.421Z debug: [AskController] Request closed
+2024-08-18T18:17:45.522Z error: There was an uncaught error: Model named "Azure Models" not found in configuration.
+2024-08-18T18:17:50.653Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:17:52.758Z info: Connected to MongoDB
+2024-08-18T18:17:53.328Z debug: [indexSync] There are 14 messages and 14 indexed
+2024-08-18T18:17:53.333Z debug: [indexSync] There are 5 convos and 5 indexed
+2024-08-18T18:17:53.971Z info: Custom config file loaded:
+2024-08-18T18:17:53.974Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:17:53.977Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:17:53.989Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:17:53.991Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:17:53.992Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:17:53.993Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:17:53.995Z info: Please replace any default secret values.
+2024-08-18T18:17:53.996Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:17:54.136Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:17:54.279Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:51:45.356Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:51:48.126Z info: Connected to MongoDB
+2024-08-18T18:51:48.234Z debug: [indexSync] There are 14 messages and 14 indexed
+2024-08-18T18:51:48.234Z debug: [indexSync] There are 5 convos and 5 indexed
+2024-08-18T18:51:48.254Z info: Custom config file loaded:
+2024-08-18T18:51:48.254Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:51:48.255Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:51:48.256Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:51:48.257Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:51:48.257Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:51:48.257Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:51:48.257Z info: Please replace any default secret values.
+2024-08-18T18:51:48.258Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:51:48.507Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:51:48.546Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:52:14.795Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:52:15.434Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:52:20.805Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T18:52:21.172Z debug: [BaseClient] Loading history:
+{
+  conversationId: "4f5a551b-35fe-479d-8dcd-2403ce2e308b",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T18:52:21.261Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:52:21.262Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:52:21.262Z debug: [BaseClient] tokenCountMap:
+{
+  ab28f2e3-c38e-43a8-8955-134ffbff6a60: 5,
+}
+2024-08-18T18:52:21.262Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:52:21.262Z debug: [BaseClient] tokenCountMap
+{
+  ab28f2e3-c38e-43a8-8955-134ffbff6a60: 5,
+  instructions: undefined,
+}
+2024-08-18T18:52:21.262Z debug: [BaseClient] userMessage
+{
+  messageId: "ab28f2e3-c38e-43a8-8955-134ffbff6a60",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "4f5a551b-35fe-479d-8dcd-2403ce2e308b",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T18:52:21.266Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"}],
+}
+2024-08-18T18:52:21.320Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01-preview
+2024-08-18T18:52:21.412Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:52:23.119Z debug: [OpenAIClient] chatCompletion response
+{
+  object: "chat.completion",
+  // 1 prompt_filter_result(s)
+  prompt_filter_results: [{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":... [truncated]],
+  id: "chatcmpl-9xfDAYNsZciktZ52vMCtuZHZTkX3G",
+  // 1 choice(s)
+  choices: [{"content_filter_results":{},"message":{"role":"assistant","content":"Hello! How can I assist you to... [truncated]],
+  created: 1724006796,
+  model: "gpt-4o-mini",
+  system_fingerprint: "fp_276aa25277",
+}
+2024-08-18T18:52:23.126Z debug: [spendTokens] conversationId: 4f5a551b-35fe-479d-8dcd-2403ce2e308b | Context: message | Token usage:
+{
+  promptTokens: 8,
+  completionTokens: 9,
+}
+2024-08-18T18:52:23.194Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:52:23.228Z debug: [AskController] Request closed
+2024-08-18T18:52:23.254Z error: There was an uncaught error: Model named "Azure Models" not found in configuration.
+2024-08-18T18:52:25.903Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:52:27.529Z info: Connected to MongoDB
+2024-08-18T18:52:27.704Z debug: [indexSync] There are 16 messages and 16 indexed
+2024-08-18T18:52:27.704Z debug: [indexSync] There are 6 convos and 6 indexed
+2024-08-18T18:52:27.745Z info: Custom config file loaded:
+2024-08-18T18:52:27.745Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:52:27.746Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:52:27.749Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:52:27.749Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:52:27.750Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:52:27.750Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:52:27.750Z info: Please replace any default secret values.
+2024-08-18T18:52:27.751Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:52:27.800Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:52:27.816Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:56:48.237Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:56:50.946Z info: Connected to MongoDB
+2024-08-18T18:56:51.142Z debug: [indexSync] There are 16 messages and 16 indexed
+2024-08-18T18:56:51.142Z debug: [indexSync] There are 6 convos and 6 indexed
+2024-08-18T18:56:51.187Z info: Custom config file loaded:
+2024-08-18T18:56:51.188Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:56:51.189Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:56:51.191Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:56:51.191Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:56:51.191Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:56:51.191Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:56:51.192Z info: Please replace any default secret values.
+2024-08-18T18:56:51.192Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:56:51.466Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:56:51.482Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
+2024-08-18T18:57:22.807Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:57:23.216Z debug: [validateJson] files
+["\"Ai_PDF.json\"","\"BrowserOp.json\"","\"Dr_Thoths_Tarot.json\"","\"DreamInterpreter.json\"","\"VoxScript.json\"","\"askyourpdf.json\"","\"drink_maestro.json\"","\"earthImagesAndVisualizations.json\"","\"image_prompt_enhancer.json\"","\"qrCodes.json\"","\"scholarai.json\"","\"uberchord.json\"","\"web_search.json\""]
+2024-08-18T18:57:27.031Z debug: [AskController]
+{
+  text: "hi",
+  conversationId: null,
+  endpoint: "azureOpenAI",
+  chatGptLabel: null,
+  promptPrefix: null,
+  resendFiles: true,
+  imageDetail: "auto",
+  iconURL: undefined,
+  greeting: undefined,
+  spec: undefined,
+  maxContextTokens: undefined,
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    // 20 openAI(s)
+    modelsConfig.openAI: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+    // 12 google(s)
+    modelsConfig.google: ["gemini-pro","gemini-pro-vision","chat-bison","chat-bison-32k","codechat-bison","codechat-bison-32k","text-bison","text-bison-32k","text-unicorn","code-gecko","code-bison","code-bison-32k"],
+    // 11 anthropic(s)
+    modelsConfig.anthropic: ["claude-3-5-sonnet-20240620","claude-3-opus-20240229","claude-3-sonnet-20240229","claude-3-haiku-20240307","claude-2.1","claude-2","claude-1.2","claude-1","claude-1-100k","claude-instant-1","claude-instant-1-100k"],
+    // 1 gptPlugin(s)
+    modelsConfig.gptPlugins: ["gpt-4"],
+    // 1 azureOpenAI(s)
+    modelsConfig.azureOpenAI: ["gpt-4"],
+    // 2 bingAI(s)
+    modelsConfig.bingAI: ["BingAI","Sydney"],
+    // 2 chatGPTBrowser(s)
+    modelsConfig.chatGPTBrowser: ["text-davinci-002-render-sha","gpt-4"],
+    // 17 assistant(s)
+    modelsConfig.assistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613"],
+    // 20 azureAssistant(s)
+    modelsConfig.azureAssistants: ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo","gpt-3.5-turbo-0125","gpt-4-turbo","gpt-4-turbo-2024-04-09","gpt-4-0125-preview","gpt-4-turbo-preview","gpt-4-1106-preview","gpt-3.5-turbo-1106","gpt-3.5-turbo-16k-0613","gpt-3.5-turbo-16k","gpt-4","gpt-4-0314","gpt-4-32k-0314","gpt-4-0613","gpt-3.5-turbo-0613","gpt-4-vision-preview","gpt-3.5-turbo-instruct-0914","gpt-3.5-turbo-instruct"],
+}
+2024-08-18T18:57:27.491Z debug: [BaseClient] Loading history:
+{
+  conversationId: "428eec5a-7fff-4abe-800d-334a333fcaec",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+}
+2024-08-18T18:57:27.580Z debug: [BaseClient] Context Count (1/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:57:27.580Z debug: [BaseClient] Context Count (2/2)
+{
+  remainingContextTokens: 8179,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:57:27.580Z debug: [BaseClient] tokenCountMap:
+{
+  780bfa92-c16b-47f6-960e-ef6efb612380: 5,
+}
+2024-08-18T18:57:27.580Z debug: [BaseClient]
+{
+  promptTokens: 8,
+  remainingContextTokens: 8179,
+  payloadSize: 1,
+  maxContextTokens: 8187,
+}
+2024-08-18T18:57:27.581Z debug: [BaseClient] tokenCountMap
+{
+  780bfa92-c16b-47f6-960e-ef6efb612380: 5,
+  instructions: undefined,
+}
+2024-08-18T18:57:27.581Z debug: [BaseClient] userMessage
+{
+  messageId: "780bfa92-c16b-47f6-960e-ef6efb612380",
+  parentMessageId: "00000000-0000-0000-0000-000000000000",
+  conversationId: "428eec5a-7fff-4abe-800d-334a333fcaec",
+  sender: "User",
+  text: "hi",
+  isCreatedByUser: true,
+  tokenCount: 5,
+}
+2024-08-18T18:57:27.582Z debug: [OpenAIClient] chatCompletion
+{
+  baseURL: "https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023... [truncated]",
+    modelOptions.model: "gpt-4",
+    modelOptions.temperature: 1,
+    modelOptions.top_p: 1,
+    modelOptions.presence_penalty: 0,
+    modelOptions.frequency_penalty: 0,
+    modelOptions.stop: undefined,
+    modelOptions.max_tokens: undefined,
+    modelOptions.user: "66c1bbf307f302d4cf8ef6ee",
+    modelOptions.stream: true,
+    // 1 message(s)
+    modelOptions.messages: [{"role":"user","content":"hi"}],
+}
+2024-08-18T18:57:27.649Z debug: Making request to https://testresourse.openai.azure.com/openai/deployments/librachat/chat/completions?api-version=2023-12-01-preview
+2024-08-18T18:57:27.759Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:57:29.474Z debug: [OpenAIClient] chatCompletion response
+{
+  object: "chat.completion",
+  // 1 prompt_filter_result(s)
+  prompt_filter_results: [{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":... [truncated]],
+  id: "chatcmpl-9xfI62JYsDGhHVsmMzKDWO4XZdE8J",
+  // 1 choice(s)
+  choices: [{"content_filter_results":{},"message":{"role":"assistant","content":"Hello! How can I assist you to... [truncated]],
+  created: 1724007102,
+  model: "gpt-4o-mini",
+  system_fingerprint: "fp_276aa25277",
+}
+2024-08-18T18:57:29.486Z debug: [spendTokens] conversationId: 428eec5a-7fff-4abe-800d-334a333fcaec | Context: message | Token usage:
+{
+  promptTokens: 8,
+  completionTokens: 9,
+}
+2024-08-18T18:57:29.542Z debug: [saveConvo] api/app/clients/BaseClient.js - saveMessageToDatabase #saveConvo
+2024-08-18T18:57:29.578Z debug: [AskController] Request closed
+2024-08-18T18:57:29.682Z error: There was an uncaught error: Model named "Azure Models" not found in configuration.
+2024-08-18T18:57:42.194Z info: [Optional] Redis not initialized. Note: Redis support is experimental.
+2024-08-18T18:57:44.406Z info: Connected to MongoDB
+2024-08-18T18:57:44.684Z debug: [indexSync] There are 18 messages and 18 indexed
+2024-08-18T18:57:44.684Z debug: [indexSync] There are 7 convos and 7 indexed
+2024-08-18T18:57:44.716Z info: Custom config file loaded:
+2024-08-18T18:57:44.717Z info: {
+  "version": "1.1.5",
+  "cache": true,
+  "interface": {
+    "privacyPolicy": {
+      "externalUrl": "https://librechat.ai/privacy-policy",
+      "op... [truncated]
+2024-08-18T18:57:44.718Z debug: Custom config:
+{
+  version: "1.1.5",
+  cache: true,
+    privacyPolicy.externalUrl: "https://librechat.ai/privacy-policy",
+    privacyPolicy.openNewTab: true,
+    termsOfService.externalUrl: "https://librechat.ai/tos",
+    termsOfService.openNewTab: true,
+    // 5 socialLogin(s)
+    registration.socialLogins: ["github","google","discord","openid","facebook"],
+    azureOpenAI.titleModel: "Azure Models",
+    azureOpenAI.plugins: true,
+    // 1 group(s)
+    azureOpenAI.groups: [{"group":"test-resource-group","apiKey":"a563c1d517724df0a3ac9a7b6c6a684d","instanceName":"testresou... [truncated]],
+}
+2024-08-18T18:57:44.720Z warn: Default value for CREDS_KEY is being used.
+2024-08-18T18:57:44.720Z warn: Default value for CREDS_IV is being used.
+2024-08-18T18:57:44.720Z warn: Default value for JWT_SECRET is being used.
+2024-08-18T18:57:44.721Z warn: Default value for JWT_REFRESH_SECRET is being used.
+2024-08-18T18:57:44.721Z info: Please replace any default secret values.
+2024-08-18T18:57:44.721Z info: ​
+
+    For your convenience, use this tool to generate your own secret values:
+    https://www.librechat.ai/toolkit/creds_generator
+
+    ​
+2024-08-18T18:57:44.935Z info: RAG API is running and reachable at http://rag_api:8000.
+2024-08-18T18:57:44.959Z info: Server listening on all interfaces at port 3080. Use http://localhost:3080 to access it
